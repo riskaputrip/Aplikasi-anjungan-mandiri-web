@@ -66,9 +66,9 @@ class ConsoleBox extends BaseController
         $db = \Config\Database::connect();
         $builder = $db->table('tbl_antrian');
         $currentDate = gmdate("Y-m-d", time() + 60 * 60 * 7);
-        $id = $this->input->get('id');
-        dd($id);
-        
+        //$id = $this->input->get('id');
+        //dd($id);
+
         $data = [
             'tanggal' => $currentDate,
             'no_antrian' => $this->request->getPost('antrian'),
@@ -76,8 +76,26 @@ class ConsoleBox extends BaseController
         ];
         $builder->insert($data);
     
-        
-        return redirect()->to('ConsoleBox/cetak', $data); 
+        $html = view('page/console_box/cetak', $data);
+
+        $filename = date('y-m-d-H-i-s'). '-nomor antrian';
+
+        // instantiate and use the dompdf class
+        $dompdf = new \Dompdf\Dompdf();
+
+        // load HTML content
+        $dompdf->loadHtml($html);
+
+        // (optional) setup the paper size and orientation
+        $dompdf->setPaper('A4', 'landscape');
+
+        // render html as PDF
+        $dompdf->render();
+
+        // // output the generated pdf
+        $dompdf->stream($filename);
+
+        return view('/page/console_box/cetak', $data); 
         
     }
 
@@ -104,7 +122,7 @@ class ConsoleBox extends BaseController
         $dompdf->render();
 
         // // output the generated pdf
-        $dompdf->stream($filename);
+        $dompdf->stream($this->filename, array("Attachment" => false));
 
     }
 

@@ -45,7 +45,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="../index.php"><i class="bi-house-fill text-primary"></i></a></li>
                             <li class="breadcrumb-item" aria-current="page">Dashboard</li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="../index.php">Antrian</li>
+                            <li class="breadcrumb-item" aria-current="page">Antrian</li>
                         </ol>
                     </nav>
                 </div>
@@ -142,7 +142,7 @@
             <hr class="my-4">
             <!-- copyright -->
             <div class="copyright text-center mb-2 mb-md-0">
-                &copy; 2022 - <a href="https://www.kemkes.go.id/" target="_blank" class="text-danger text-decoration-none">Kementerian Kesehatan RepubliK Indonesia</a>.
+                &copy; 2022 - <a href="" target="_blank" class="text-danger text-decoration-none">Kementerian Kesehatan Republik Indonesia</a>.
             </div>
         </div>
     </footer>

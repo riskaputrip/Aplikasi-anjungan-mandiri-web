@@ -147,7 +147,7 @@
         <div class="container-fluid">
             <!-- copyright -->
             <div class="copyright text-center mb-2 mb-md-0">
-                &copy; 2022 - <a href="https://www.kemkes.go.id/" target="_blank" class="text-danger text-decoration-none">Riska</a>.
+                &copy; 2022 - <a href="https://www.kemkes.go.id/" target="_blank" class="text-danger text-decoration-none">Kementerian Kesehatan Republik Indonesia</a>.
             </div>
         </div>
     </footer>

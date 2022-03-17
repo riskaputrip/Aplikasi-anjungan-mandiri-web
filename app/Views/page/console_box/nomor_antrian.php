@@ -9,7 +9,7 @@
 
 
     <!-- Title -->
-    <title>Aplikasi Antrian Berbasis Web</title>
+    <title>Aplikasi Anjungan Mandiri Berbasis Web</title>
 
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="img/logo_puskesmas.png" type="image/x-icon">
@@ -37,7 +37,7 @@
                         <div class="d-flex align-items-center me-md-auto">
                             <i class="bi-people-fill text-primary me-3 fs-3"></i>
                             <h1 class="h5 pt-2">Nomor Antrian</h1>
-                            <a href="<?= base_url('/console_box'); ?>" class="btn btn-dark" style="margin-left: 43%; ">Kembali</a>
+                            <a href="<?= base_url('/console_box'); ?>" class="btn btn-dark" style="margin-left: 40%; ">Kembali</a>
                         </div>
                         
                     </div>

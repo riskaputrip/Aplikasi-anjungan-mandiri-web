@@ -11,10 +11,37 @@
     <title>Cetak Antrian</title>
   </head>
   <body>
-    <h1>SELAMAT DATANG</h1>
-    <?= $tanggal ; ?>
-    <?= $no_antrian ; ?>
-    <?= $poli ; ?>
+    <h1 align="center">SELAMAT DATANG</h1>
+    <h2 align="center">Di Puskesmas Kecamatan Kebon Jeruk</h2>
+    <h3 align="center">Jl. Raya Kb. Jeruk No.02, RW.01, Kb.Jeruk, Kec. Kb.Jeruk, Kota Jakarta Barat</h3>
+    
+    <div class="text" align="center" style= "font-size: 20px; font-weight: bolder;">
+    <?= $tanggal ; ?></h3> <br>
+     <hr> <br>
+</div>
+    <style>
+  .bordered {
+    margin-left: 180px;
+    width: 600px;
+    height: 350px;
+    padding: 10px;
+    border: 10px double black;
+  }
+</style>
+
+<div class="bordered" align = "center">
+<h2>NOMOR ANTRIAN</h2> <hr>
+<h1><?= $no_antrian ;?>1</h1>
+<h3><?= $poli ; ?>(Poli Umum)</h3> <hr>
+<h3>Mohon Menunggu, Anda akan dipanggil sesuai nomor antrian anda</h3>
+<h3>TERIMA KASIH</h3>
+<h4>(KEMENTERIAN KESEHATAN REPUBLIK INDONESIA)</h4>
+</div>
+
+    
+    
+    
+    
 
 
     <!-- Optional JavaScript; choose one of the two! -->
